@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/colorBackground"
+    tools:context="com.example.android.myrtillo.MainActivity">
+
+
+<ScrollView
+    style="@style/ScrollApp">
+
+<!--this is the top image and logo-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+            <ImageView
+                android:id="@+id/Hero"
+            style="@style/HeroImage"
+            android:src="@drawable/myrtillo_interior_red" />
+
+                <LinearLayout
+                    style="@style/Header">
+                    <ImageView
+                        style="@style/Logo" />
+                    <TextView
+                        style="@style/HeroTitle"
+                        android:text="@string/title"
+                        android:fontFamily="sans-serif-light"/>
+                </LinearLayout>
+<!--end of top image and logo-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Info"
+            android:layout_below="@id/Hero">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/Info"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/description1"   />
+
+        </RelativeLayout>
+
+<!--this is the group of icons-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_below="@id/Info"
+        >
+        <!--phone-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/phone">
+            <ImageView
+                android:id="@+id/phoneimg"
+                style="@style/LittleIcons"
+                android:src="@drawable/ic_phone_black_24dp"/>
+            <TextView
+                android:id="@+id/phonetxt"
+                android:layout_below="@id/phoneimg"
+                style="@style/IconText"
+                android:text="@string/phonestring"
+                />
+        </RelativeLayout>
+        <!--website-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/web"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:id="@+id/webimg"
+                style="@style/LittleIcons"
+                android:src="@drawable/ic_web_black_24dp"/>
+            <TextView
+                android:id="@+id/webtxt"
+                android:layout_below="@id/webimg"
+                style="@style/IconText"
+                android:text="@string/webstring"/>
+        </RelativeLayout>
+        <!--map-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/map"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:id="@+id/mapimg"
+                style="@style/LittleIcons"
+                android:src="@drawable/ic_place_black_24dp"/>
+            <TextView
+                android:id="@+id/maptxt"
+                android:layout_below="@id/mapimg"
+                style="@style/IconText"
+                android:text="@string/mapstring"/>
+        </RelativeLayout>
+    </RelativeLayout>
+<!--end of group of icons-->
+
+<!--About us-->
+        <TextView
+            style="@style/ColorHeading"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/description2"
+            />
+        <TextView
+            style="@style/ParagraphText"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:text="@string/description3"
+            />
+        <ImageView
+            style="@style/HeroImage"
+            android:src="@drawable/myrtillo_team"
+            android:id="@+id/imageView" />
+
+        <TextView
+            style="@style/ParagraphText"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:text="@string/description4"
+            />
+
+<!--end of About us-->
+
+<!--Contact info-->
+        <TextView
+            style="@style/ColorHeading"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/description5"
+            />
+        <TextView
+            style="@style/ParagraphText"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:text="@string/description6"
+            />
+        <ImageView
+            style="@style/HeroImage"
+            android:src="@drawable/myrtillo_interior_yellow" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical">
+                <RelativeLayout
+                    style="@style/Spaces">
+                        <ImageView
+                            android:src="@drawable/ic_phone_black_24dp"
+                            style="@style/BottomIcons"
+                            android:id="@+id/phonebottom"/>
+                        <TextView
+                            android:layout_toEndOf="@id/phonebottom"
+                            android:layout_toRightOf="@id/phonebottom"
+                            style="@style/BottomIconText"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/phonenumber"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    style="@style/Spaces"
+                            >
+                        <ImageView
+                            android:src="@drawable/ic_web_black_24dp"
+                            style="@style/BottomIcons"
+                            android:fontFamily="sans-serif-light"
+                            android:id="@+id/webbottom"/>
+                        <TextView
+                            android:layout_toEndOf="@id/webbottom"
+                            android:layout_toRightOf="@id/webbottom"
+                            style="@style/BottomIconText"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/website"/>
+                </RelativeLayout>
+            <RelativeLayout
+                style="@style/Spaces"
+                android:layout_marginBottom="40dp"
+                >
+                <ImageView
+                    android:src="@drawable/ic_mail_outline_black_24dp"
+                    style="@style/BottomIcons"
+                    android:id="@+id/mailbottom"/>
+                <TextView
+                    android:layout_toEndOf="@id/mailbottom"
+                    android:layout_toRightOf="@id/mailbottom"
+                    style="@style/BottomIconText"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/mail"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+<!--end of Contact info-->
+
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

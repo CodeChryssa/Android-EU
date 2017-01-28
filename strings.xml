@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Myrtillo</string>
+
+    <!-- Header Container. -->
+    <string name="title">Myrtillo Café Athens</string>
+
+    <!-- Description. -->
+    <string name="description1">Trifyllias &amp; Lampsa Str., 115 24, Ampelokipoi \n(Panormou Metro Station)\n\nOpen Hours: 10:00 to 22:00</string>
+    <string name="description2">About Myrtillo Café</string>
+    <string name="description3">The Myrtillo Café was set up by the Myrtillo Social Co-operative Enterprise with the aim of providing training, work experience and access to the labour market for people from vulnerable social groups, primarily young people with moderate learning disability.</string>
+    <string name="description4">Social Enterprise of the Year 2014 | Social Business Excellence Awards 2014</string>
+    <string name="description5">Contact information</string>
+    <string name="description6">If you are interested in working as volunteers, salaried personnel, coordinators, instructors, specialists, advisors or as artists, contact Myrtillo Café!</string>
+    <string name="phonenumber">+30 211 012 3176</string>
+    <string name="website">http://www.myrtillocafe.gr/</string>
+    <string name="mail">myrtillocafe@gmail.com</string>
+
+    <!-- Labels. -->
+    <string name="phonestring">call</string>
+    <string name="webstring">website</string>
+    <string name="mapstring">map</string>
+</resources>
